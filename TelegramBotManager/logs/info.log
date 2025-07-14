@@ -1,0 +1,45 @@
+[2025-07-13T22:08:18.639Z] INFO VPNServer: VPN Server started on port 8000
+[2025-07-13T22:08:18.635Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:09:35.553Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:09:35.556Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:09:45.843Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:09:45.846Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:11:54.254Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:11:54.262Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:12:38.886Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:12:38.889Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:13:12.926Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:13:12.928Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:16:41.373Z] INFO VPNManager: OpenVPN service restarted
+[2025-07-13T22:27:19.346Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:27:19.349Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:27:23.481Z] INFO VPNManager: Generated VPN config for user: testuser
+[2025-07-13T22:28:13.742Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:28:13.745Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:28:17.579Z] INFO VPNManager: Generated VPN config for user: apitest
+[2025-07-13T22:28:41.740Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:28:41.737Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:31:58.834Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:31:58.837Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:32:48.120Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:32:48.123Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:33:32.944Z] INFO VPNManager: Generated VPN config for user: testuser
+[2025-07-13T22:34:41.814Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:34:41.817Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:35:01.513Z] INFO VPNManager: Generated VPN config for user: testuser123
+[2025-07-13T22:35:59.083Z] INFO VPNManager: Generated VPN config for user: testuser123
+[2025-07-13T22:35:59.284Z] INFO VPNManager: Generated VPN config for user: apitest123
+[2025-07-13T22:36:19.679Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:36:19.682Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:39:10.859Z] INFO VPNManager: Generated VPN config for user: Ary
+[2025-07-13T22:40:17.732Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:40:17.734Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:40:28.545Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:40:28.548Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:40:51.926Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:40:51.929Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:41:01.956Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:41:01.960Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:53:48.922Z] INFO VPNServer: VPN Server started on port 5000
+[2025-07-13T22:53:48.919Z] INFO VPNBot: VPN Bot initialized successfully
+[2025-07-13T22:54:11.268Z] INFO : Config data too large for QR code, generating connection URL instead

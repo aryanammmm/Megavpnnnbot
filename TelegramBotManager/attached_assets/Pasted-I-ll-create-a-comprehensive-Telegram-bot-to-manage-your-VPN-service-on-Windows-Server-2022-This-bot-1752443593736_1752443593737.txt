@@ -1,0 +1,460 @@
+I'll create a comprehensive Telegram bot to manage your VPN service on Windows Server 2022. This bot will handle user registration, VPN connections, and server management.
+Complete Telegram Bot Implementation
+1. Main Bot File (bot.js)
+javascriptDownloadCopy code Wrapconst TelegramBot = require('node-telegram-bot-api');
+const { Sequelize, DataTypes } = require('sequelize');
+const bcrypt = require('bcryptjs');
+const { v4: uuidv4 } = require('uuid');
+const { exec } = require('child_process');
+const util = require('util');
+const fs = require('fs').promises;
+const path = require('path');
+const axios = require('axios');
+const QRCode = require('qrcode');
+
+// Promisify exec for async/await
+const execAsync = util.promisify(exec);
+
+// Bot configuration
+const BOT_TOKEN = '8027517903:AAFeNSZvYNuGeO4-p8gURkRigGYaI-S9VMg';
+const ADMIN_ID = 123456789; // Replace with your Telegram user ID
+
+// Initialize bot
+const bot = new TelegramBot(BOT_TOKEN, { polling: true });
+
+// Database setup
+const sequelize = new Sequelize({
+  dialect: 'sqlite',
+  storage: './vpn_bot.db',
+  logging: false
+});
+
+// User model
+const User = sequelize.define('User', {
+  id: {
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
+    primaryKey: true
+  },
+  telegramId: {
+    type: DataTypes.BIGINT,
+    unique: true,
+    allowNull: false
+  },
+  username: {
+    type: DataTypes.STRING,
+    unique: true,
+    allowNull: false
+  },
+  password: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  isActive: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: true
+  },
+  vpnConfigPath: {
+    type: DataTypes.STRING
+  },
+  connectedAt: {
+    type: DataTypes.DATE
+  },
+  bytesIn: {
+    type: DataTypes.BIGINT,
+    defaultValue: 0
+  },
+  bytesOut: {
+    type: DataTypes.BIGINT,
+    defaultValue: 0
+  },
+  expiresAt: {
+    type: DataTypes.DATE
+  },
+  createdAt: {
+    type: DataTypes.DATE
+  },
+  lastConnectionAt: {
+    type: DataTypes.DATE
+  }
+});
+
+// Connection log model
+const ConnectionLog = sequelize.define('ConnectionLog', {
+  id: {
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
+    primaryKey: true
+  },
+  userId: {
+    type: DataTypes.UUID,
+    allowNull: false
+  },
+  connectedAt: {
+    type: DataTypes.DATE,
+    allowNull: false
+  },
+  disconnectedAt: {
+    type: DataTypes.DATE
+  },
+  bytesIn: {
+    type: DataTypes.BIGINT,
+    defaultValue: 0
+  },
+  bytesOut: {
+    type: DataTypes.BIGINT,
+    defaultValue: 0
+  },
+  clientIp: {
+    type: DataTypes.STRING
+  }
+});
+
+// Initialize database
+sequelize.sync().then(() => {
+  console.log('Database initialized');
+});
+
+// Helper functions
+const isAdmin = (userId) => userId === ADMIN_ID;
+
+const generateVPNConfig = async (username) => {
+  const configTemplate = `client
+dev tun
+proto udp
+remote YOUR_SERVER_IP 1194
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+auth SHA512
+cipher AES-256-CBC
+comp-lzo
+verb 3
+auth-user-pass
+
+<ca>
+-----BEGIN CERTIFICATE-----
+# Your CA certificate here
+-----END CERTIFICATE-----
+</ca>`;
+
+  const configPath = path.join(__dirname, 'configs', `${username}.ovpn`);
+  await fs.mkdir(path.dirname(configPath), { recursive: true });
+  await fs.writeFile(configPath, configTemplate);
+  
+  return configPath;
+};
+
+const createSystemUser = async (username, password) => {
+  try {
+    // Create Windows user
+    await execAsync(`net user ${username} ${password} /add`);
+    
+    // Add to VPN Users group (create group if not exists)
+    await execAsync(`net localgroup "VPN Users" /add 2>nul || echo "Group exists"`);
+    await execAsync(`net localgroup "VPN Users" ${username} /add`);
+    
+    return true;
+  } catch (error) {
+    console.error('Error creating system user:', error);
+    return false;
+  }
+};
+
+const deleteSystemUser = async (username) => {
+  try {
+    await execAsync(`net user ${username} /delete`);
+    return true;
+  } catch (error) {
+    console.error('Error deleting system user:', error);
+    return false;
+  }
+};
+
+const getConnectionStatus = async () => {
+  try {
+    const { stdout } = await execAsync('openvpn-status.bat');
+    return stdout;
+  } catch (error) {
+    return 'Unable to get status';
+  }
+};
+
+const getServerStats = async () => {
+  try {
+    // Get system info
+    const cpuCmd = 'wmic cpu get loadpercentage /value | findstr LoadPercentage';
+    const memCmd = 'wmic OS get TotalVisibleMemorySize,FreePhysicalMemory /value';
+    const diskCmd = 'wmic logicaldisk get size,freespace,caption /value';
+    
+    const [cpu, mem, disk] = await Promise.all([
+      execAsync(cpuCmd),
+      execAsync(memCmd),
+      execAsync(diskCmd)
+    ]);
+    
+    return {
+      cpu: cpu.stdout.trim(),
+      memory: mem.stdout.trim(),
+      disk: disk.stdout.trim()
+    };
+  } catch (error) {
+    return null;
+  }
+};
+
+// Keyboard layouts
+const mainKeyboard = {
+  reply_markup: {
+    keyboard: [
+      ['📊 My Status', '🔐 Connect VPN'],
+      ['📈 Usage Stats', '🔌 Disconnect'],
+      ['❓ Help', '📞 Support']
+    ],
+    resize_keyboard: true
+  }
+};
+
+const adminKeyboard = {
+  reply_markup: {
+    keyboard: [
+      ['👥 Users', '➕ Add User'],
+      ['📊 Server Stats', '🔄 Restart VPN'],
+      ['📝 Logs', '🔙 Back']
+    ],
+    resize_keyboard: true
+  }
+};
+
+// Bot commands
+bot.onText(/\/start/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id;
+  
+  try {
+    let user = await User.findOne({ where: { telegramId: userId } });
+    
+    if (!user) {
+      bot.sendMessage(chatId, 
+        `Welcome to VPN Bot! 🚀\n\n` +
+        `To get started, you need to register.\n` +
+        `Please use /register to create your VPN account.`,
+        mainKeyboard
+      );
+    } else {
+      bot.sendMessage(chatId, 
+        `Welcome back, ${user.username}! 👋\n\n` +
+        `Use the menu below to manage your VPN connection.`,
+        mainKeyboard
+      );
+    }
+  } catch (error) {
+    bot.sendMessage(chatId, '❌ An error occurred. Please try again.');
+  }
+});
+
+bot.onText(/\/register/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id;
+  
+  try {
+    const existingUser = await User.findOne({ where: { telegramId: userId } });
+    
+    if (existingUser) {
+      bot.sendMessage(chatId, '⚠️ You are already registered!');
+      return;
+    }
+    
+    bot.sendMessage(chatId, '📝 Please enter a username for your VPN account:');
+    
+    bot.once('message', async (msg) => {
+      const username = msg.text.trim();
+      
+      if (!/^[a-zA-Z0-9_]{3,20}$/.test(username)) {
+        bot.sendMessage(chatId, '❌ Invalid username. Use 3-20 characters (letters, numbers, underscore).');
+        return;
+      }
+      
+      const existingUsername = await User.findOne({ where: { username } });
+      if (existingUsername) {
+        bot.sendMessage(chatId, '❌ Username already taken. Please try another.');
+        return;
+      }
+      
+      bot.sendMessage(chatId, '🔐 Please enter a password:');
+      
+      bot.once('message', async (msg) => {
+        const password = msg.text.trim();
+        
+        if (password.length < 6) {
+          bot.sendMessage(chatId, '❌ Password must be at least 6 characters long.');
+          return;
+        }
+        
+        // Create user in database
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const user = await User.create({
+          telegramId: userId,
+          username,
+          password: hashedPassword,
+          expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days
+        });
+        
+        // Create system user
+        await createSystemUser(username, password);
+        
+        // Generate VPN config
+        const configPath = await generateVPNConfig(username);
+        user.vpnConfigPath = configPath;
+        await user.save();
+        
+        bot.sendMessage(chatId, 
+          `✅ Registration successful!\n\n` +
+          `Username: ${username}\n` +
+          `Password: ${password}\n\n` +
+          `⚠️ Save these credentials securely!\n` +
+          `Your VPN access expires in 30 days.`,
+          mainKeyboard
+        );
+        
+        // Send config file
+        bot.sendDocument(chatId, configPath, {
+          caption: '📎 Your VPN configuration file'
+        });
+      });
+    });
+  } catch (error) {
+    bot.sendMessage(chatId, '❌ Registration failed. Please try again.');
+  }
+});
+
+// Handle keyboard buttons
+bot.on('message', async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id;
+  const text = msg.text;
+  
+  if (!text || text.startsWith('/')) return;
+  
+  try {
+    const user = await User.findOne({ where: { telegramId: userId } });
+    
+    switch (text) {
+      case '📊 My Status':
+        if (!user) {
+          bot.sendMessage(chatId, '❌ Please register first with /register');
+          return;
+        }
+        
+        const status = user.connectedAt ? '🟢 Connected' : '🔴 Disconnected';
+        const expires = new Date(user.expiresAt).toLocaleDateString();
+        
+        bot.sendMessage(chatId,
+          `📊 **Your VPN Status**\n\n` +
+          `Status: ${status}\n` +
+          `Username: ${user.username}\n` +
+          `Expires: ${expires}\n` +
+          `Data In: ${(user.bytesIn / 1024 / 1024).toFixed(2)} MB\n` +
+          `Data Out: ${(user.bytesOut / 1024 / 1024).toFixed(2)} MB`,
+          { parse_mode: 'Markdown' }
+        );
+        break;
+        
+      case '🔐 Connect VPN':
+        if (!user) {
+          bot.sendMessage(chatId, '❌ Please register first with /register');
+          return;
+        }
+        
+        // Generate QR code for easy mobile setup
+        const configData = await fs.readFile(user.vpnConfigPath, 'utf8');
+        const qrPath = path.join(__dirname, 'temp', `${user.username}_qr.png`);
+        await QRCode.toFile(qrPath, configData);
+        
+        bot.sendPhoto(chatId, qrPath, {
+          caption: '📱 Scan this QR code with OpenVPN Connect app\n\n' +
+                   'Or download the config file below:'
+        });
+        
+        bot.sendDocument(chatId, user.vpnConfigPath, {
+          caption: '📎 Your VPN configuration file'
+        });
+        
+        // Clean up QR file
+        setTimeout(() => fs.unlink(qrPath).catch(() => {}), 5000);
+        break;
+        
+      case '📈 Usage Stats':
+        if (!user) {
+          bot.sendMessage(chatId, '❌ Please register first with /register');
+          return;
+        }
+        
+        const logs = await ConnectionLog.findAll({
+          where: { userId: user.id },
+          order: [['connectedAt', 'DESC']],
+          limit: 5
+        });
+        
+        let statsMsg = '📈 **Your Usage Statistics**\n\n';
+        statsMsg += `Total Data In: ${(user.bytesIn / 1024 / 1024).toFixed(2)} MB\n`;
+        statsMsg += `Total Data Out: ${(user.bytesOut / 1024 / 1024).toFixed(2)} MB\n\n`;
+        statsMsg += '**Recent Connections:**\n';
+        
+        logs.forEach((log, index) => {
+          const date = new Date(log.connectedAt).toLocaleString();
+          const duration = log.disconnectedAt 
+            ? Math.round((new Date(log.disconnectedAt) - new Date(log.connectedAt)) / 1000 / 60)
+            : 'Active';
+          statsMsg += `${index + 1}. ${date} (${duration} min)\n`;
+        });
+        
+        bot.sendMessage(chatId, statsMsg, { parse_mode: 'Markdown' });
+        break;
+        
+      case '🔌 Disconnect':
+        if (!user) {
+          bot.sendMessage(chatId, '❌ Please register first with /register');
+          return;
+        }
+        
+        // Command to disconnect user (implement based on your VPN setup)
+        bot.sendMessage(chatId, '🔌 Disconnecting your VPN session...');
+        // Add actual disconnect logic here
+        break;
+        
+      case '❓ Help':
+        bot.sendMessage(chatId,
+          `❓ **VPN Bot Help**\n\n` +
+          `/start - Start the bot\n` +
+          `/register - Register new VPN account\n` +
+          `/admin - Admin panel (admin only)\n\n` +
+          `**How to connect:**\n` +
+          `1. Download OpenVPN Connect app\n` +
+          `2. Import the configuration file\n` +
+          `3. Enter your username and password\n` +
+          `4. Connect!\n\n` +
+          `**Supported platforms:**\n` +
+          `✅ Windows\n` +
+          `✅ macOS\n` +
+          `✅ iOS/Android\n` +
+          `✅ Linux`,
+          { parse_mode: 'Markdown' }
+        );
+        break;
+        
+      case '📞 Support':
+        bot.sendMessage(chatId,
+          `📞 **Support**\n\n` +
+          `For technical support, please contact:\n` +
+          `📧 Email: support@yourvpn.com\n` +
+          `💬 Telegram: @yoursupport`
+        );
+        break;
+        
+      // Admin commands
+      case '/admin':
+        if (!isAdmin(userId)) {
+          bot.sen

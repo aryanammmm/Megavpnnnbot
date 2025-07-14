@@ -1,0 +1,207 @@
+# OpenVPN Configuration Template for VPN Bot
+# This template is used to generate user-specific VPN configurations
+
+# Client mode
+client
+
+# Use TUN device
+dev tun
+
+# Protocol (UDP is faster, TCP is more reliable)
+proto udp
+
+# Server address and port
+remote ${SERVER_IP} ${OPENVPN_PORT}
+
+# Keep trying indefinitely to resolve the host name
+resolv-retry infinite
+
+# Most clients don't need to bind to a specific local port number
+nobind
+
+# Downgrade privileges after initialization (non-Windows only)
+;user nobody
+;group nobody
+
+# Try to preserve some state across restarts
+persist-key
+persist-tun
+
+# Wireless networks often produce a lot of duplicate packets
+# Set this flag to silence duplicate packet warnings
+;mute-replay-warnings
+
+# Verify server certificate by checking that the
+# certicate has the correct key usage set
+remote-cert-tls server
+
+# Use compression
+comp-lzo
+
+# Set log file verbosity
+verb 3
+
+# Silence repeating messages
+;mute 20
+
+# Authentication
+auth-user-pass
+
+# Cryptographic settings
+auth SHA512
+cipher AES-256-GCM
+tls-version-min 1.2
+tls-cipher TLS-DHE-RSA-WITH-AES-256-GCM-SHA384:TLS-DHE-RSA-WITH-AES-256-CBC-SHA256:TLS-DHE-RSA-WITH-AES-128-GCM-SHA256:TLS-DHE-RSA-WITH-AES-128-CBC-SHA256
+
+# Prevent man-in-the-middle attacks
+tls-auth ta.key 1
+
+# Key direction for TLS authentication
+key-direction 1
+
+# Redirect all traffic through VPN
+redirect-gateway def1
+
+# Use these DNS servers
+dhcp-option DNS 8.8.8.8
+dhcp-option DNS 8.8.4.4
+dhcp-option DNS 1.1.1.1
+dhcp-option DNS 1.0.0.1
+
+# Prevent DNS leaks
+block-outside-dns
+
+# Keep alive settings
+keepalive 10 120
+
+# Enable fast LZO compression
+fast-io
+
+# Optimize for low latency
+sndbuf 0
+rcvbuf 0
+
+# Prevent time-based attacks
+auth-nocache
+
+# Disable caching of --askpass or --auth-user-pass usernames/passwords
+auth-nocache
+
+# Exit on TLS negotiation failure
+tls-exit
+
+# Require peer certificate to be signed with an explicit key usage and extended key usage
+;remote-cert-ku 160
+;remote-cert-eku "TLS Web Server Authentication"
+
+# Embedded certificates and keys
+<ca>
+-----BEGIN CERTIFICATE-----
+# CA Certificate will be inserted here by the VPN manager
+# This is a placeholder for the Certificate Authority certificate
+# In production, this should be replaced with the actual CA certificate
+MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF
+ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6
+b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTEL
+MAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv
+b3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXj
+ca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM
+9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qw
+IFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6
+VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L
+93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQm
+jgSubJrIqg0CAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMC
+AYYwHQYDVR0OBBYEFIQYzIU07LwMlJQuCFmcx7IQTgoIMA0GCSqGSIb3DQEBCwUA
+A4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB/G/wkjUu0yKGX9rbxenDI
+U5PMCCjjmCXPI6T53iHTfIuJruydjsw2hUwsqdGBOoceNFtHYzG8c4j2lK5ZdLqS
+1LyJsNr95xN6lK9E1kCN9T/ULhfIUaR/XRE8/W5qTJUHCHqVgPWFN9c6KtO3iWLm
+EXAMPLE_CA_CERT_PLACEHOLDER
+-----END CERTIFICATE-----
+</ca>
+
+<cert>
+-----BEGIN CERTIFICATE-----
+# Client Certificate will be inserted here by the VPN manager
+# This is a unique certificate for each user
+# In production, this should be generated and signed by the CA
+MIIDUTCCAjmgAwIBAgIJAKPaQn4kyOOUMA0GCSqGSIb3DQEBCwUAMD8xCzAJBgNV
+BAYTAlVTMQswCQYDVQQIDAJDQTEUMBIGA1UEBwwLU2FuIFJhZmFlbDEXMBUGA1UE
+CgwOVlBOIFNlcnZlciBDZXJ0MB4XDTE5MDcwODA4MDUwM1oXDTI5MDcwNTA4MDUw
+M1owPzELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRQwEgYDVQQHDAtTYW4gUmFm
+YWVsMRcwFQYDVQQKDA5WUE4gU2VydmVyIENlcnQwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQCUSER_CLIENT_CERT_PLACEHOLDER
+-----END CERTIFICATE-----
+</cert>
+
+<key>
+-----BEGIN PRIVATE KEY-----
+# Client Private Key will be inserted here by the VPN manager
+# This is a unique private key for each user
+# In production, this should be generated securely and stored safely
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCUSER_PRIVATE_KEY_PLACEHOLDER
+-----END PRIVATE KEY-----
+</key>
+
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+6acef03f62675b4b1bbd03e53b187727
+423cea742242106cb2916a8a4c829756
+3d22c7e5cef430b1103c6f66eb1fc5b3
+75a672f158e2e2e936c3faa48b035a6d
+e17beaac23b5f03b10b868d53d03521d
+a0d8a1c3c1b7e5a8b5f5c4a5d1e2f3b4
+c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0
+a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6
+e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2
+c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8
+a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4
+e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6
+a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2
+e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8
+c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+-----END OpenVPN Static key V1-----
+</tls-auth>
+
+# Windows-specific settings
+# Uncomment these lines for Windows clients
+;route-method exe
+;route-delay 2
+;dhcp-option DOMAIN local
+;dhcp-option DOMAIN-SEARCH local
+
+# Linux/Unix-specific settings
+# Uncomment these lines for Linux/Unix clients
+;up /etc/openvpn/update-resolv-conf
+;down /etc/openvpn/update-resolv-conf
+
+# Mac-specific settings
+# Uncomment these lines for macOS clients
+;up /etc/openvpn/update-resolv-conf
+;down /etc/openvpn/update-resolv-conf
+
+# Connection retry settings
+connect-retry 2
+connect-retry-max 10
+connect-timeout 10
+
+# Logging settings (comment out for production)
+;log-append /var/log/openvpn/client.log
+;status /var/log/openvpn/client-status.log 10
+
+# Performance tuning
+;txqueuelen 1000
+;tun-mtu 1500
+;fragment 1300
+;mssfix 1200
+
+# Security enhancements
+;tls-verify /etc/openvpn/verify-cn
+;crl-verify /etc/openvpn/crl.pem
+
+# Custom routes (add specific routes if needed)
+;route 192.168.1.0 255.255.255.0
+;route 10.0.0.0 255.0.0.0

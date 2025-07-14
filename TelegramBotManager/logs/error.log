@@ -1,0 +1,1309 @@
+[2025-07-13T22:08:22.470Z] ERROR VPNManager.getServerStats: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+Error: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:08:22.480Z] ERROR VPNManager.getConnectedClients: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+Error: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:09:49.912Z] ERROR VPNManager.getConnectedClients: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+Error: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:09:49.921Z] ERROR VPNManager.getServerStats: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+Error: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:10:19.934Z] ERROR VPNManager.getServerStats: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+Error: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:10:20.759Z] ERROR VPNManager.getConnectedClients: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+Error: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:10:49.916Z] ERROR VPNManager.getServerStats: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+Error: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:10:49.924Z] ERROR VPNManager.getConnectedClients: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+Error: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:11:19.917Z] ERROR VPNManager.getServerStats: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+Error: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:11:20.638Z] ERROR VPNManager.getConnectedClients: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+Error: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:11:49.929Z] ERROR VPNManager.getServerStats: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+Error: Command failed: wmic cpu get loadpercentage /value | findstr LoadPercentage
+/bin/sh: 1: wmic: not found
+/bin/sh: 1: findstr: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:11:50.656Z] ERROR VPNManager.getConnectedClients: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+Error: Command failed: type "C:\Program Files\OpenVPN\log\status.log"
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:11:56.180Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:11:56.189Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:12:11.945Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:12:12.890Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:12:26.899Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:12:27.658Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:12:42.940Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:12:42.956Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:12:59.098Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:13:17.475Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:13:18.707Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:13:47.478Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:13:48.344Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:14:24.307Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:14:25.206Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:14:53.229Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:14:53.230Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:16:15.548Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:16:23.529Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:16:23.537Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:16:39.370Z] ERROR VPNManager.stopService: Command failed: sc stop "OpenVPN"
+/bin/sh: 1: sc: not found
+
+Error: Command failed: sc stop "OpenVPN"
+/bin/sh: 1: sc: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:16:41.373Z] ERROR VPNManager.startService: Command failed: sc start "OpenVPN"
+/bin/sh: 1: sc: not found
+
+Error: Command failed: sc start "OpenVPN"
+/bin/sh: 1: sc: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:16:46.687Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:17:29.646Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:17:29.652Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:18:44.329Z] ERROR VPNManager.createSystemUser: Command failed: net user Ary Aryan-8731 /add /comment:"VPN User" /expires:never /passwordchg:no
+/bin/sh: 1: net: not found
+
+Error: Command failed: net user Ary Aryan-8731 /add /comment:"VPN User" /expires:never /passwordchg:no
+/bin/sh: 1: net: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:18:44.329Z] ERROR VPNBot.createUserAccount: Command failed: net user Ary Aryan-8731 /add /comment:"VPN User" /expires:never /passwordchg:no
+/bin/sh: 1: net: not found
+
+Error: Command failed: net user Ary Aryan-8731 /add /comment:"VPN User" /expires:never /passwordchg:no
+/bin/sh: 1: net: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:18:53.476Z] ERROR VPNBot.generateQRCode: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+    at open (node:internal/fs/promises:636:10)
+    at Object.readFile (node:internal/fs/promises:1242:20)
+    at VPNBot.generateQRCode (/home/runner/workspace/bot.js:386:35)
+    at VPNBot.handleConnectCommand (/home/runner/workspace/bot.js:514:33)
+    at async TelegramBot.<anonymous> (/home/runner/workspace/bot.js:114:11)
+[2025-07-13T22:18:53.593Z] ERROR VPNBot.handleConnectCommand: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:19:01.320Z] ERROR VPNBot.sendConfigFile: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:19:03.720Z] ERROR VPNBot.generateQRCode: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+    at open (node:internal/fs/promises:636:10)
+    at Object.readFile (node:internal/fs/promises:1242:20)
+    at VPNBot.generateQRCode (/home/runner/workspace/bot.js:386:35)
+    at VPNBot.sendQRCode (/home/runner/workspace/bot.js:904:33)
+    at async VPNBot.handleCallbackQuery (/home/runner/workspace/bot.js:838:9)
+    at async TelegramBot.<anonymous> (/home/runner/workspace/bot.js:160:9)
+[2025-07-13T22:19:24.701Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:19:25.354Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:19:36.713Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:19:37.462Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:20:06.747Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:20:07.562Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:20:36.729Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:20:37.455Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:21:06.737Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:21:07.586Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:21:36.725Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:21:36.731Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:22:06.743Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:22:07.454Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:22:36.731Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:22:37.592Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:23:06.757Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:23:07.550Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:23:36.820Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+[2025-07-13T22:23:37.632Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:24:00.056Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:24:00.878Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:24:06.813Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:24:07.625Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:24:36.843Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:24:37.553Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:25:06.955Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:25:07.712Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:25:37.112Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:25:37.866Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:26:07.059Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:26:07.788Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:26:37.831Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:26:38.641Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:27:07.111Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:27:07.114Z] ERROR VPNManager.getConnectedClients: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+Error: Command failed: cat /var/log/openvpn/status.log || cat /etc/openvpn/status.log || cat /tmp/openvpn-status.log
+cat: /var/log/openvpn/status.log: No such file or directory
+cat: /etc/openvpn/status.log: No such file or directory
+cat: /tmp/openvpn-status.log: No such file or directory
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+[2025-07-13T22:30:29.063Z] ERROR VPNBot.generateQRCode: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+    at open (node:internal/fs/promises:636:10)
+    at Object.readFile (node:internal/fs/promises:1242:20)
+    at VPNBot.generateQRCode (/home/runner/workspace/bot.js:386:35)
+    at VPNBot.handleConnectCommand (/home/runner/workspace/bot.js:514:33)
+    at async TelegramBot.<anonymous> (/home/runner/workspace/bot.js:114:11)
+[2025-07-13T22:30:29.180Z] ERROR VPNBot.handleConnectCommand: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:30:32.805Z] ERROR VPNBot.generateQRCode: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+    at open (node:internal/fs/promises:636:10)
+    at Object.readFile (node:internal/fs/promises:1242:20)
+    at VPNBot.generateQRCode (/home/runner/workspace/bot.js:386:35)
+    at VPNBot.sendQRCode (/home/runner/workspace/bot.js:904:33)
+    at async VPNBot.handleCallbackQuery (/home/runner/workspace/bot.js:838:9)
+    at async TelegramBot.<anonymous> (/home/runner/workspace/bot.js:160:9)
+[2025-07-13T22:30:35.384Z] ERROR VPNBot.sendConfigFile: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:30:46.698Z] ERROR VPNBot.sendConfigFile: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:30:49.451Z] ERROR VPNBot.sendConfigFile: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:39:06.322Z] ERROR VPNBot.generateQRCode: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received null
+    at open (node:internal/fs/promises:636:10)
+    at Object.readFile (node:internal/fs/promises:1242:20)
+    at VPNBot.generateQRCode (/home/runner/workspace/bot.js:386:35)
+    at VPNBot.handleConnectCommand (/home/runner/workspace/bot.js:514:33)
+    at async TelegramBot.<anonymous> (/home/runner/workspace/bot.js:114:11)
+[2025-07-13T22:39:06.440Z] ERROR VPNBot.handleConnectCommand: ETELEGRAM: 400 Bad Request: there is no document in the request
+Error: ETELEGRAM: 400 Bad Request: there is no document in the request
+    at /home/runner/workspace/node_modules/node-telegram-bot-api/src/telegram.js:316:15
+    at tryCatcher (/home/runner/workspace/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/runner/workspace/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/runner/workspace/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/runner/workspace/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/runner/workspace/node_modules/bluebird/js/release/async.js:102:5)
+    at Async.drainQueues [as _onImmediate] (/home/runner/workspace/node_modules/bluebird/js/release/async.js:15:14)
+    at process.processImmediate (node:internal/timers:483:21)
+[2025-07-13T22:39:10.942Z] ERROR VPNBot.generateQRCode: The amount of data is too big to be stored in a QR Code
+Error: The amount of data is too big to be stored in a QR Code
+    at createSymbol (/home/runner/workspace/node_modules/qrcode/lib/core/qrcode.js:405:11)
+    at Object.create (/home/runner/workspace/node_modules/qrcode/lib/core/qrcode.js:494:10)
+    at /home/runner/workspace/node_modules/qrcode/lib/server.js:71:29
+    at new Promise (<anonymous>)
+    at render (/home/runner/workspace/node_modules/qrcode/lib/server.js:69:12)
+    at Object.toFile (/home/runner/workspace/node_modules/qrcode/lib/server.js:126:10)
+    at Utils.generateQRCode (/home/runner/workspace/utils.js:126:20)
+    at async VPNBot.generateQRCode (/home/runner/workspace/bot.js:391:7)
+    at async VPNBot.sendQRCode (/home/runner/workspace/bot.js:921:22)
+    at async VPNBot.handleCallbackQuery (/home/runner/workspace/bot.js:838:9)
+    at async TelegramBot.<anonymous> (/home/runner/workspace/bot.js:160:9)
